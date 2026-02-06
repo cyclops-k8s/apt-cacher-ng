@@ -1,0 +1,17 @@
+# Temporary files
+*.tmp
+*.log
+*~
+
+# Docker
+.dockerignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

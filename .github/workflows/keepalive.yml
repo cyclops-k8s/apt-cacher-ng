@@ -1,0 +1,21 @@
+name: Keepalive Workflow
+
+on:
+  schedule:
+    # Run every 50 days to prevent workflow deactivation (GitHub disables after 60 days of inactivity)
+    - cron: '0 0 */50 * *'
+  workflow_dispatch:
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Keepalive action
+        uses: gautamkrishnar/keepalive-workflow@v2
+        with:
+          committer_username: 'github-actions[bot]'
+          committer_email: 'github-actions[bot]@users.noreply.github.com'
