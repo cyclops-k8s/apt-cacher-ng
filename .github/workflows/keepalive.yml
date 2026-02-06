@@ -2,8 +2,8 @@ name: Keepalive Workflow
 
 on:
   schedule:
-    # Run every 50 days to prevent workflow deactivation (GitHub disables after 60 days of inactivity)
-    - cron: '0 0 */50 * *'
+    # Run every 30 days to prevent workflow deactivation (GitHub disables after 60 days of inactivity)
+    - cron: '0 0 1 * *'
   workflow_dispatch:
 
 jobs:

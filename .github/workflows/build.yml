@@ -34,7 +34,7 @@ jobs:
           images: quay.io/${{ secrets.QUAY_REPOSITORY }}/apt-cacher-ng
           tags: |
             type=raw,value=latest
-            type=sha,prefix={{branch}}-
+            type=sha,prefix=sha-
             type=schedule,pattern={{date 'YYYYMMDD'}}
 
       - name: Build and push Docker image
