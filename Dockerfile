@@ -9,9 +9,6 @@ RUN apt-get update && \
 # Expose the default apt-cacher-ng port
 EXPOSE 3142
 
-# Create cache directory
-RUN mkdir -p /var/cache/apt-cacher-ng
-
 # Volume for cache persistence
 VOLUME ["/var/cache/apt-cacher-ng"]
 
