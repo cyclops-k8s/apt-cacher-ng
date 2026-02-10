@@ -46,7 +46,6 @@ The container uses the default apt-cacher-ng configuration. The cache is stored 
 This repository includes automated workflows:
 
 - **Build and Push**: Builds the Docker image on every push to main and weekly (Sundays at 00:00 UTC)
-- **Keepalive**: Keeps the repository active to prevent GitHub from disabling scheduled workflows
 
 ## Building Locally
 
