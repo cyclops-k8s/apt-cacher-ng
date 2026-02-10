@@ -48,14 +48,6 @@ This repository includes automated workflows:
 - **Build and Push**: Builds the Docker image on every push to main and weekly (Sundays at 00:00 UTC)
 - **Keepalive**: Keeps the repository active to prevent GitHub from disabling scheduled workflows
 
-### Required Secrets
-
-To enable the workflows, configure these secrets in your repository:
-
-- `QUAY_USERNAME`: Your Quay.io username
-- `QUAY_PASSWORD`: Your Quay.io password or robot token
-- `QUAY_REPOSITORY`: Your Quay.io organization/repository name
-
 ## Building Locally
 
 ```bash
